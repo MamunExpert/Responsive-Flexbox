@@ -196,10 +196,79 @@ header .nav-header {
 
 
 
+/* ================================= */
+
+footer{
+  background: #FCFCFC;
+  margin-top: 1rem;
+  padding: 2% 0;
+}
+.main-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+}
+
+#social, #links, #copyright{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#social a{
+  text-decoration: none;
+  color: #303030;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  border: 1px solid #303030;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+#social a:hover{
+  color: #FCFCFC;
+  background: #059862;
+  border: 1px transparent;
+  transition: .3s ;
+}
+
+#links{
+  gap: 3px;
+}
+#links a{
+  color: #059862;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+
+}
+
+#links a:hover{
+  background:#04AA6D;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  transition: .3s ;
+
+}
+
+#copyright p{
+  font-size: 16px;
+  color: #303030;
+}
+
 
 
 
 /* ============================== */
+/* ============================== */
+/* ============================== */
+
 @media screen and (max-width: 768px){
   .heading {
     font-size: 18px;
@@ -214,6 +283,7 @@ header .nav-header {
   .s-box-wrapper .s-box {
     align-items: center;
   }
+
   .top-news {
     margin: 0;
     margin-top: 1rem;
@@ -245,6 +315,19 @@ header .nav-header {
 
   .nav-header .navbar ul a{
     text-align: center;
+  }
+
+  .s-box .post-img{
+    flex: 39%;
+  }
+
+  .s-box .info{
+    flex: 60%;
+  }
+
+  .s-box .info .short-info{
+    font-size: 18px;
+    line-height: 25px;
   }
 
   .top-news {
